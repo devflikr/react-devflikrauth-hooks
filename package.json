@@ -1,0 +1,67 @@
+{
+    "name": "react-devflikrauth-hooks",
+    "version": "0.0.1",
+    "description": "ReactJS hooks for subscribing to the authentication API service for DevFlikrAuth.",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "types": "./dist/esm/index.d.ts",
+    "typings": "./dist/esm/index.d.ts",
+    "scripts": {
+        "lint": "eslint . --ext .ts",
+        "prepublishOnly": "npm run compile",
+        "postpublish": "npm run clean",
+        "compile": "npm run clean && npm run compile:esm && npm run compile:cjs",
+        "compile:esm": "tsc",
+        "compile:cjs": "tsc --module commonjs --outDir dist/cjs",
+        "clean": "rimraf dist"
+    },
+    "files": [
+        "dist",
+        "LICENSE",
+        "package.json",
+        "README.md"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/devflikr/react-devflikrauth-hooks"
+    },
+    "keywords": [
+        "hook",
+        "hooks",
+        "react",
+        "devflikr",
+        "react-hook",
+        "react-hooks",
+        "devflikrauth",
+        "devflikr-hook",
+        "devflikr-hooks",
+        "devflikrauth-hook",
+        "devflikrauth-hooks",
+        "react-devflikr-hook",
+        "react-devflikr-hooks",
+        "react-devflikrauth-hook",
+        "react-devflikrauth-hooks"
+    ],
+    "author": "DevFlikr",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/devflikr/react-devflikrauth-hooks/issues"
+    },
+    "devDependencies": {
+        "@types/js-cookie": "^3.0.3",
+        "@types/react": "^18.2.15",
+        "@typescript-eslint/eslint-plugin": "^6.9.0",
+        "eslint": "^8.45.0",
+        "react": "^18.2.0",
+        "rimraf": "^5.0.1",
+        "typescript": "^5.1.6"
+    },
+    "peerDependencies": {
+        "react": ">=18"
+    },
+    "homepage": "https://github.com/devflikr/react-devflikrauth-hooks#readme",
+    "dependencies": {
+        "devflikrauth": "^0.1.1",
+        "tslib": "^2.6.2"
+    }
+}
