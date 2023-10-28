@@ -61,7 +61,7 @@
     },
     "homepage": "https://github.com/devflikr/react-devflikrauth-hooks#readme",
     "dependencies": {
-        "devflikrauth": "^0.1.1",
+        "devflikrauth": ">=1",
         "tslib": "^2.6.2"
     }
 }
