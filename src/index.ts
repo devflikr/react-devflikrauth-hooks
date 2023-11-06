@@ -1,13 +1,15 @@
 import useAuth from "./lib/useAuth";
-import useAuthCurrentUser from "./lib/useAuthCurrentUser";
-import useAuthUsers from "./lib/useAuthUsers";
 import useSignOut from "./lib/useSignOut";
+import useAuthUsers from "./lib/useAuthUsers";
+import useAuthCurrentUser from "./lib/useAuthCurrentUser";
+import useAuthUserSessions from "./lib/useAuthUserSessions";
 
 const devFlikrAuthHooks = {
     useAuth,
     useSignOut,
     useAuthUsers,
     useAuthCurrentUser,
+    useAuthUserSessions,
 };
 
 export default devFlikrAuthHooks;
@@ -17,4 +19,5 @@ export {
     useSignOut,
     useAuthUsers,
     useAuthCurrentUser,
+    useAuthUserSessions,
 };
